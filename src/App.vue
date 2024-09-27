@@ -272,6 +272,7 @@ import CardComponent from './components/CardComponent.vue';
 
   const pageNumber = ref(0);
   const selectedSort = ref('rating')
+  const currentTopic = ref('All Topics')
 
   const props = defineProps({
     size: {
@@ -285,9 +286,7 @@ import CardComponent from './components/CardComponent.vue';
   })
 
   const nextPage = () => {
-    if(pageNumber.value < pageCount.value - 1) {
-      pageNumber.value++;
-    }
+      pageNumber.value = (pageNumber.value + 1)%pageCount.value;
   }
 
   const prevPage = ()=>{
@@ -296,8 +295,20 @@ import CardComponent from './components/CardComponent.vue';
     }
   }
 
+  const filteredData = ref(cardsData)
+
+  const filterByTopic = (topic) => {
+    currentTopic.value = topic === 'all' ? 'All Topics' : topic.charAt(0).toUpperCase() + topic.slice(1)
+    if(topic == 'all') {
+      filteredData.value = [...cardsData]
+    }
+    else{
+      filteredData.value = cardsData.filter(card => card.Topic === topic)
+    }
+  }
+
   const sortedCardsData = computed(() => {
-    return [...cardsData].sort((a, b) => {
+    return [...filteredData.value].sort((a, b) => {
     if (selectedSort.value === 'rating') {
       return b.Rating - a.Rating; // Сортировка по убыванию рейтинга
     } else if (selectedSort.value === 'date') {
@@ -320,6 +331,8 @@ import CardComponent from './components/CardComponent.vue';
   })
 
 
+
+
 </script>
 
 <template>
@@ -338,7 +351,7 @@ import CardComponent from './components/CardComponent.vue';
     <div class="trapezoid">
       <img src="./assets/figure.svg" alt="svg" class="my_svg">
       <div class="date_div"><p class="date_text">13.09.2024</p></div>
-      <div class="logo_text">Adventure</div>
+      <div class="logo_text">{{ currentTopic }}</div>
       <div class="rating">
         <div class="filter_box">
           <select v-model="selectedSort" @change="sortCards">
@@ -368,7 +381,7 @@ import CardComponent from './components/CardComponent.vue';
        />
   </div>
   
-  <Menu v-if="isOpen" class="menu_overlay" @click="toggleMenu"/>
+  <Menu v-if="isOpen" class="menu_overlay" @filter="filterByTopic" @toggle="toggleMenu"/>
 </template>
 
 <style scoped>

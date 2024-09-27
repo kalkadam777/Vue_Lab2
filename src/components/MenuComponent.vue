@@ -5,17 +5,28 @@ defineProps({
   msg: String,
 })
 
-const count = ref(0)
+const emit = defineEmits(['filter', 'toggle'])
+const isOpen = ref(false)
+
+const filterByTopic = (topic) => {
+  emit('filter', topic)
+}
+
+const toggleMenu = () => {
+    isOpen.value = !isOpen.value
+    emit('toggle', isOpen.value)
+  }
 </script>
 
 <template>
   <div class="container_menu">
-    <div class="menu_text">MENU</div>
+    <div class="menu_text" @click="toggleMenu">MENU</div>
     <div class="list_menu">
-      <div class="blog_text">ADVENTURE BLOG</div>
-      <div class="blog_text">NATURE BLOG</div>
-      <div class="blog_text">FASHION BLOG</div>
-      <div class="blog_text">MODERN BLOG</div>
+      <div class="blog_text" @click="filterByTopic('adventure')">ADVENTURE BLOG</div>
+      <div class="blog_text" @click="filterByTopic('nature')">NATURE BLOG</div>
+      <div class="blog_text" @click="filterByTopic('fashion')">FASHION BLOG</div>
+      <div class="blog_text" @click="filterByTopic('modern')">MODERN BLOG</div>
+      <div class="blog_text" @click="filterByTopic('all')">SHOW ALL</div>
       <div class="contact_data">
         <div class="contacts_text">CONTACTS</div>
         <div class="list_text">
