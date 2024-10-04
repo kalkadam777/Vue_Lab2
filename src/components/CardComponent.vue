@@ -1,6 +1,29 @@
 <script setup>
-    const props = defineProps(['name', 'time', 'rating', 'text', 'user_img']);
+     import { ref, watch } from 'vue';
+    const props = defineProps({
+        name: String,
+        time: String,
+        rating: {
+            type: Number,
+            default: 0,  
+        },
+        text: String,
+        user_img: String,
+    });
+    
+    const currentRating = ref(props.rating); 
+    const addStar = () => {
+        if (currentRating.value < 5) {
+            currentRating.value += 0.1;  
+        }
+        
+    };
 
+    watch(() => props.rating, (newRating) => {
+        currentRating.value = Number(newRating) || 0;
+        });
+
+    console.log(currentRating.value)
 </script>
 
 <template>
@@ -14,8 +37,14 @@
                 <div class="rating_stars">
                     <p>Rating</p>
                     <div class="stars">
-                        <img v-for="star in Math.floor(rating)" :key="star" src="../assets/star.svg" alt="" class="star">
-                        <img v-for="star in 5 - Math.floor(rating)" :key="star + 5" src="../assets/star_w.svg" alt="" class="star">
+                        <span 
+                            v-for="index in 5" 
+                            :key="index" 
+                            :class="{
+                                star: true, 
+                                on: index <= Math.floor(currentRating), 
+                                half: index === Math.ceil(currentRating) && currentRating % 1 >= 0.5
+                            }"></span>
                     </div>
                 </div>
                 <div>
@@ -27,7 +56,7 @@
             </div>
         </div>
         <div>
-            <button class="like_btn">LIKE</button>
+            <button class="like_btn" @click="addStar">LIKE</button>
         </div>
     </div>
 </template>
@@ -52,10 +81,6 @@
         justify-content: center;
     }
 
-    .star {
-        width:25px;
-        height: 25px;
-    }
 
     .user_img {
         width: 100px;
@@ -103,7 +128,32 @@
     .stars {
         display: flex;
         flex-direction: row;
-        gap: 5px;
+        position: relative;
+    }
+
+    .star {
+        font-size: x-large;
+        width: 25px;
+        display: inline-block;
+        color: gray;
+        position: relative;
+    }
+
+    .star:before {
+        content: '\2605';
+    }
+
+    .star.on {
+        color: gold;
+    }
+
+    .star.half:after {
+        content: '\2605';
+        color: gold;
+        position: absolute;
+        left: 0;
+        width: 45%;
+        overflow: hidden;
     }
 
     .bottom_cont {

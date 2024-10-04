@@ -15,7 +15,7 @@ import CardComponent from './components/CardComponent.vue';
       id:1,
       PersonName: 'Mark Twen',
       PubDate: 'Today, 12:00',
-      Rating: '4',
+      Rating: 4,
       Topic: 'adventure',
       Commentary: 'This is awesome adventure that I had! Thanks!',
       Avatar: 'https://s3-alpha-sig.figma.com/img/d2bd/bd4c/d1592cda471f4ef986c6cb5ca671ef8b?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DkDiVX6r4cZlvvDpNXl9nLEP3tkGnE3PMejiZcGR7QFTlvqEro6PjCY5trN85XK-Na85ZOR-z-9OHqEg28ExDvmmuwqyyPxmrXza5DP4SghSZ0EHlLtFedChqK3dDy-5pz6YnzrC65pgE78uRtSoxsuUYJgCXTW1e~ajY9VHSiftrf9ILJX-9zyAooF1Pr4pObCiIV~Z5af9fEvlHog0Y4NCgarFLekxN1R~ceYvt0p51vVn~YXnWEaxnG8jqygxrIIGN4u7Z~hyXitG15Bq0WMpykXRObvzmjDtj6WrDwdpoZgFiwzZulh75~ws8q2D6rPP0ugf-WQK-lI0RLqu7w__'
@@ -24,7 +24,7 @@ import CardComponent from './components/CardComponent.vue';
       id:2,
       PersonName: 'Katherine Johns',
       PubDate: '5 days ago, 12:15',
-      Rating: '4',
+      Rating: 4,
       Topic: 'nature',
       Commentary: 'The place is very big. I lost the exit.',
       Avatar: 'https://s3-alpha-sig.figma.com/img/88c8/0576/ea05896c023dc82988b6ded10b86a034?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MHIDxAsHUNr3Dm5lG8dQwUikRw7dowvP7SAN1yMYYGyxhGLbg4OhDz4V3mixEg04V4DEmBOrTy4ihka-Mo0O5LurC9D9X69UldN-1Dpee5kxxwf~8sHjyVXB6cJBfNwmTpJyvrTshPs66jAmxG~SaLsC48YPoqFWeaWIXNSVAhVuFrvNPDlG4q7P3UQUPdAdMUDrf~JsWvU8LjVrF3imoyg~x6WBhzY-OR8mvVAIvT0Ubgbt9nRZxzUUAL8OCVYYNw0tcMqAniD0GKHTgl5~DVaSSjqtvpZnbmgP4BGKIxSEXo5~dd2-6a7WzhL2o6WXKF1YNvMUvkwSnU~PBLUwPA__'
@@ -33,7 +33,7 @@ import CardComponent from './components/CardComponent.vue';
       id:3,
       PersonName: 'Sally Robinson',
       PubDate: 'Yesterday, 18:30',
-      Rating: '4',
+      Rating: 4,
       Topic: 'modern',
       Commentary: 'Something new for me. Drive and emotions only',
       Avatar: 'https://s3-alpha-sig.figma.com/img/9490/73fb/0f39c6138406aaab01e478d549b01db5?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gDNgZbvne-BG7F3P53I5HurUViPpbg9stSh9sxv3eW3awHEVWZSgTljvkwIbLa4undHGh6c3Iz42mI~TKTQPN5k3tPhdKcoGj0fKHT9ksa0Rk88UA6NlEdbgtS2DRfnyZVW~gwlh-JqenO01pf-KRWUaJ0y9TvNCYseBac0Qm1zM5lpiADGsqLnhLmjZAUiEtEGv8QO-o5tTMZ2fWkBOTBWRgLIiWJM7LPIZnhQ~sOdZKSvcCQ~6r0NS6OdSEjipm-GssGCVDfF5GGd1kAWgwKWi0QMD9LUkXz0ViP1TrsxH6Di6t5kku7x6nQA2mKy-jEQFo5IDJl5x70NGkJ-HBw__'
@@ -42,7 +42,7 @@ import CardComponent from './components/CardComponent.vue';
       id:4,
       PersonName: 'Stevie',
       PubDate: '2 days ago, 09:05',
-      Rating: '4',
+      Rating: 4,
       Topic: 'fashion',
       Commentary: 'Something to be upgraded.',
       Avatar: 'https://s3-alpha-sig.figma.com/img/c6f7/8462/feb57eaf0052b5b858b9c7943e94c40e?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WHsaxQzjD6TNrnOIZ5UseVG64qimF7~hOAApbsWiDhghPRv89IeVgkUrGPvFKypTTrtI10iDT8S9AAJbAuj2vvNThs1iT31iYWM2yyZgn~GoC8UIWx5Zg0F5t7fNBPwhXngH8zSz5wUlUlLnzm33Ivs4lgy3DRt1kQEuSGVGb9HKFBjhBP5eFSDXxnitmcUnedv9mvaWMFvUk-eACgNTQBbn-gX0K9DR~59WnJi1IZYkQ56stppZA9fTn5MEraxDsxVm4KjwTP4JTDpuzPFsen8Aru3a22~iT0o731kqn-cfp7SVm3ROSZiiEG6PMrHvbZwEsXJV1Lhl6WUoYLEQqg__'
@@ -51,7 +51,7 @@ import CardComponent from './components/CardComponent.vue';
       id:5,
       PersonName: 'Jeff Stud',
       PubDate: 'Today, 12:00',
-      Rating: '3',
+      Rating: 3,
       Topic: 'adventure',
       Commentary: 'This is awesome adventure that I had! Thanks!',
       Avatar: 'https://s3-alpha-sig.figma.com/img/dbd1/f326/dbaff3bf2eccee99c86f19befa9da2d2?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YZ5K2WRmmgOT9YON853OjwS34DWSmsHWKlr-dxuUJxLF~yibzcJ5i4LTnf2aoxQcOeIOqPr7rCk-Txuvjw2Kq9GNjJnpl~sgZxz9QDBDdtzRAOWWy1Izu1rp8R8dBEW-bo~~YugjCY2A5t6-3-O1QCmEVBYxYg5rTpTz2AdudRPm3sNOeb5qpb5A86D75FX5aHRkl7zZPYvV5cvfR5aINAaV2D-2jNWrR2LNs4UsOLLSjCpn5EuZFmc8pwoeUs1pZRJEFykCY2PSVaBXYrbZn~w~qo6NAUPmktOc~hDTDawkAHWsEzEdVFK3gV8sMymTExD-284QQAzPYnV-nP8z5w__'
@@ -60,7 +60,7 @@ import CardComponent from './components/CardComponent.vue';
       id:6,
       PersonName: 'Milla Loren ',
       PubDate: '1 days ago, 12:10',
-      Rating: '2',
+      Rating: 2,
       Topic: 'adventure',
       Commentary: 'The place is very big. I lost the exit.',
       Avatar: 'https://s3-alpha-sig.figma.com/img/3a6b/e814/73c95cdf26040c22e1ba016e3ef134ba?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XJ7qrghlYb-vlJqDCGCakJuZGs-9U4uHAth2rupfYvCNGizi4pF9NK7-AEKk7wvOq9rmRreXS99uW2i-25Pm30c71oKBpx29Dyw3qMKiVcWmEL3cHQW4CUEMhrcl5zR1vzPu9wRzOjXdK1a1J7a17NWnvm4CzNriwCxuWPlgsS8tw2SybjIojrtDV9CJ7LwA-JzbSGH4z7HsdHAp6YbDZa~oj33n49JP9JqJuwUfcLV6i7HJN7NCKxQH46RC3FtSfCkdYXNDtuwdpdRMpeypgkJmJUwPvQ~c2WP7IVjAQ-YgJzNvQTmPjqQUHmk3qQav8HIgxU78aPRnlL072RBvNA__'
@@ -69,7 +69,7 @@ import CardComponent from './components/CardComponent.vue';
       id:7,
       PersonName: 'Sally Robinson',
       PubDate: 'Yesterday, 18:30',
-      Rating: '3',
+      Rating: 3,
       Topic: 'nature',
       Commentary: 'Something new for me. Drive and emotions only',
       Avatar: 'https://s3-alpha-sig.figma.com/img/9490/73fb/0f39c6138406aaab01e478d549b01db5?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gDNgZbvne-BG7F3P53I5HurUViPpbg9stSh9sxv3eW3awHEVWZSgTljvkwIbLa4undHGh6c3Iz42mI~TKTQPN5k3tPhdKcoGj0fKHT9ksa0Rk88UA6NlEdbgtS2DRfnyZVW~gwlh-JqenO01pf-KRWUaJ0y9TvNCYseBac0Qm1zM5lpiADGsqLnhLmjZAUiEtEGv8QO-o5tTMZ2fWkBOTBWRgLIiWJM7LPIZnhQ~sOdZKSvcCQ~6r0NS6OdSEjipm-GssGCVDfF5GGd1kAWgwKWi0QMD9LUkXz0ViP1TrsxH6Di6t5kku7x6nQA2mKy-jEQFo5IDJl5x70NGkJ-HBw__'
@@ -78,7 +78,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 8,
       PersonName: 'Charlotte Lewis',
       PubDate: '4 weeks ago, 15:30',
-      Rating: '4',
+      Rating: 4,
       Topic: 'adventure',
       Commentary: 'Wonderful trip with beautiful scenery.',
       Avatar: 'https://static.vecteezy.com/system/resources/previews/009/397/835/non_2x/man-avatar-clipart-illustration-free-png.png'
@@ -87,7 +87,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 9,
       PersonName: 'John Smith',
       PubDate: '1 hours ago, 08:00',
-      Rating: '5',
+      Rating: 5,
       Topic: 'modern',
       Commentary: 'Incredible experience! Would love to go again.',
       Avatar: 'https://static.vecteezy.com/system/resources/previews/009/398/577/non_2x/man-avatar-clipart-illustration-free-png.png'
@@ -96,7 +96,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 10,
       PersonName: 'Emily Davis',
       PubDate: '3 hours ago, 10:30',
-      Rating: '4',
+      Rating: 4,
       Topic: 'modern',
       Commentary: 'Beautiful location, but it was a bit crowded.',
       Avatar: 'https://www.pngitem.com/pimgs/m/22-224298_avatar-people-icon-transparent-background-hd-png-download.png'
@@ -105,7 +105,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 11,
       PersonName: 'Michael Brown',
       PubDate: 'Yesterday, 18:45',
-      Rating: '5',
+      Rating: 5,
       Topic: 'nature',
       Commentary: 'A must-see! Everything was perfect.',
       Avatar: 'https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png'
@@ -114,7 +114,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 12,
       PersonName: 'Sophia Johnson',
       PubDate: '2 days ago, 14:15',
-      Rating: '3',
+      Rating: 3,
       Topic: 'adventure',
       Commentary: 'It was okay, but I expected more from the trip.',
       Avatar: 'https://www.pngall.com/wp-content/uploads/12/Avatar-PNG-Photo.png'
@@ -123,7 +123,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 13,
       PersonName: 'Daniel Miller',
       PubDate: '1 weeks ago, 17:30',
-      Rating: '4',
+      Rating: 4,
       Topic: 'fashion',
       Commentary: 'Great overall, but the guide could’ve been better.',
       Avatar: 'https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-man-avatar-image-for-profile-png-image_9197908.png'
@@ -132,7 +132,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 14,
       PersonName: 'Emma Wilson',
       PubDate: '3 weeks ago, 11:00',
-      Rating: '2',
+      Rating: 2,
       Topic: 'adventure',
       Commentary: 'The weather ruined the experience, but the views were nice.',
       Avatar: 'https://static.vecteezy.com/system/resources/previews/011/459/674/original/people-avatar-icon-png.png'
@@ -141,7 +141,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 15,
       PersonName: 'Stevie',
       PubDate: '2 days ago, 09:05',
-      Rating: '1',
+      Rating: 1,
       Topic: 'modern',
       Commentary: 'Something to be upgraded.',
       Avatar: 'https://www.pngitem.com/pimgs/m/22-224065_avatar-people-icon-png-transparent-png.png'
@@ -150,7 +150,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 16,
       PersonName: 'Olivia Garcia',
       PubDate: '1 months ago, 16:20',
-      Rating: '5',
+      Rating: 4,
       Topic: 'adventure',
       Commentary: 'Hands down, the best trip I’ve ever been on!',
       Avatar: 'https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-women-cartoon-avatar-in-flat-style-png-image_6110776.png'
@@ -159,7 +159,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 17,
       PersonName: 'Lucas Martinez',
       PubDate: '4 days ago, 12:30',
-      Rating: '4',
+      Rating: 4,
       Topic: 'adventure',
       Commentary: 'Very good trip, but the food could’ve been better.',
       Avatar: 'https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-man-avatar-image-for-profile-png-image_9197909.png'
@@ -168,7 +168,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 18,
       PersonName: 'Ava Thompson',
       PubDate: '5 days ago, 09:00',
-      Rating: '5',
+      Rating: 5,
       Topic: 'fashion',
       Commentary: 'The landscapes were out of this world!',
       Avatar: 'https://png.pngtree.com/png-vector/20211027/ourmid/pngtree-avatar-a-man-with-jacket-png-image_4003791.png'
@@ -177,7 +177,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 19,
       PersonName: 'James White',
       PubDate: '6 days ago, 10:15',
-      Rating: '3',
+      Rating: 3,
       Topic: 'modern',
       Commentary: 'An average experience. Could’ve been better.',
       Avatar: 'https://cdn-icons-png.flaticon.com/512/5556/5556520.png'
@@ -186,7 +186,7 @@ import CardComponent from './components/CardComponent.vue';
       id: 20,
       PersonName: 'Isabella Harris',
       PubDate: '2 weeks ago, 13:45',
-      Rating: '5',
+      Rating: 5,
       Topic: 'modern',
       Commentary: 'Simply fantastic! Highly recommended.',
       Avatar: 'https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png'
@@ -280,10 +280,6 @@ import CardComponent from './components/CardComponent.vue';
       default: 4
     }
   });
-  
-  const pageCount = computed(() => {
-    return Math.ceil(cardsData.length / props.size)
-  })
 
   const nextPage = () => {
       pageNumber.value = (pageNumber.value + 1)%pageCount.value;
@@ -299,25 +295,32 @@ import CardComponent from './components/CardComponent.vue';
 
   const filterByTopic = (topic) => {
     currentTopic.value = topic === 'all' ? 'All Topics' : topic.charAt(0).toUpperCase() + topic.slice(1)
+    pageNumber.value = 0
     if(topic == 'all') {
       filteredData.value = [...cardsData]
     }
     else{
       filteredData.value = cardsData.filter(card => card.Topic === topic)
     }
+    console.log('filteredData:', filteredData.value);
   }
 
   const sortedCardsData = computed(() => {
     return [...filteredData.value].sort((a, b) => {
     if (selectedSort.value === 'rating') {
-      return b.Rating - a.Rating; // Сортировка по убыванию рейтинга
+      return b.Rating - a.Rating; 
     } else if (selectedSort.value === 'date') {
       const dateA = parseDate(a.PubDate);
       const dateB = parseDate(b.PubDate);
-      return dateB - dateA; // Сортировка по дате (по убыванию)
+      return dateB - dateA; 
     }
     return 0;
     });
+  })
+
+  const pageCount = computed(() => {
+    console.log('pageCount:', Math.ceil(filteredData.value.length / props.size));
+    return Math.ceil(filteredData.value.length / props.size)
   })
 
   const paginatedData = computed(() => {
@@ -363,7 +366,7 @@ import CardComponent from './components/CardComponent.vue';
       <div class="arrow">
         <img src="./assets/arrow_right.svg" alt="" class="arrow_svg" @click="nextPage">
       </div>
-      <div class="score">{{currentPage}}/5</div>
+      <div class="score">{{currentPage}}/{{ pageCount }}</div>
     </div>
     
   </div>
@@ -388,6 +391,7 @@ import CardComponent from './components/CardComponent.vue';
   @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Jersey+15&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  
   .container {
       background-image: url('./assets/bg2.png');
       background-size: cover; 
@@ -402,6 +406,7 @@ import CardComponent from './components/CardComponent.vue';
       color: #1DE390;
       background: #EDFCF7;
       font-family: "Jersey 15";
+
   }
   select {
       cursor: pointer;
@@ -417,9 +422,41 @@ import CardComponent from './components/CardComponent.vue';
       appearance: none;
       background: url(./assets/try.svg) 4em 7px no-repeat,
       url(./assets/filter.png) 0px 5px no-repeat;
+      background-size: 20px; /* Размер иконки */
+      transition: background 0.3s ease;
   }
   select:focus {
       outline:none;
+  }
+
+  select:focus::after {
+  content: '';
+  position: absolute;
+  background: url(./assets/filter.png) 10px center no-repeat;
+  background-size: 20px;
+  transform: rotate(180deg); /* Переворачиваем только иконку filter.png */
+  transition: transform 0.3s ease;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 200px;
+    left: 740px;
+  }
+
+  .filter_box {
+    color: #1DE390;
+    font-family: "Jersey 15";
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #EEFCF7;
+    padding: 3px 10px 3px 10px;
   }
 
   .trapezoid {
@@ -464,27 +501,6 @@ import CardComponent from './components/CardComponent.vue';
   .arrow_svg {
     width: 130px;
     height: 100px;
-  }
-
-  .rating {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    position: absolute;
-    top: 200px;
-    left: 740px;
-  }
-
-  .filter_box {
-    color: #1DE390;
-    font-family: "Jersey 15";
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background: #EEFCF7;
-    padding: 3px 10px 3px 10px;
   }
 
   .logo_text {
@@ -604,12 +620,5 @@ import CardComponent from './components/CardComponent.vue';
     left: 0;
     z-index: 2;
   }
-
-  /* .card_overlay {
-    position: absolute;
-    top: 400px;
-    left: 250px;
-    z-index: 1;
-  } */
 
 </style>
