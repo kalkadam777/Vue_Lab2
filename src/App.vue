@@ -10,7 +10,7 @@ import CardComponent from './components/CardComponent.vue';
     isOpen.value = !isOpen.value
   }
 
-  const cardsData = [
+  const cardsData = ref([
     {
       id:1,
       PersonName: 'Mark Twen',
@@ -191,7 +191,7 @@ import CardComponent from './components/CardComponent.vue';
       Commentary: 'Simply fantastic! Highly recommended.',
       Avatar: 'https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png'
     },
-  ];
+  ]);
 
   function parseDate(dateStr) {
   const now = new Date();
@@ -340,6 +340,13 @@ import CardComponent from './components/CardComponent.vue';
     return pageNumber.value + 1
   })
 
+  const handleLike = (card) => {
+  const cardIndex = cardsData.value.findIndex(c => c.PersonName === card.PersonName);
+  if (cardIndex !== -1 && cardsData.value[cardIndex].Rating < 5) {
+    cardsData.value[cardIndex].Rating = +(cardsData.value[cardIndex].Rating + 0.1).toFixed(1);  // Увеличиваем рейтинг
+  }
+};
+
 
 
 
@@ -387,6 +394,7 @@ import CardComponent from './components/CardComponent.vue';
         :user_img="card.Avatar"
         :text="card.Commentary"
         class="card_overlay"
+        @like="handleLike(card)"
 
        />
   </div>

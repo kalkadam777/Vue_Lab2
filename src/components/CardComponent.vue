@@ -16,6 +16,7 @@
         if (currentRating.value < 5) {
             currentRating.value += 0.1;  
         }
+        emit('like'); 
         
     };
 
@@ -24,6 +25,8 @@
         });
 
     console.log(currentRating.value)
+
+    const emit = defineEmits(['like']); 
 </script>
 
 <template>
