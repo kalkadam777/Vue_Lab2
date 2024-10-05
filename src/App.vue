@@ -271,6 +271,7 @@ import CardComponent from './components/CardComponent.vue';
 
 
   const pageNumber = ref(0);
+  const className = ref('select-rotated-up')
   const selectedSort = ref('rating')
   const currentTopic = ref('All Topics')
 
@@ -290,6 +291,12 @@ import CardComponent from './components/CardComponent.vue';
       pageNumber.value--;
     }
   }
+
+  const rotate = () => {
+    className.value = className.value === 'select-rotated-down' ? 'select-rotated-up' : 'select-rotated-down';
+  }
+
+
 
   const filteredData = ref(cardsData)
 
@@ -356,10 +363,10 @@ import CardComponent from './components/CardComponent.vue';
       <div class="date_div"><p class="date_text">13.09.2024</p></div>
       <div class="logo_text">{{ currentTopic }}</div>
       <div class="rating">
-        <div class="filter_box">
-          <select v-model="selectedSort" @change="sortCards">
-                <option value="rating">Rating</option>
-                <option value="date">Date</option>
+        <div class="filter-box">
+          <select :class="className" v-model="selectedSort" v-on:click.capture="rotate()" >
+              <option value="rating">Rating</option>
+              <option value="date">Date</option>
           </select>
         </div>
       </div>
@@ -401,43 +408,6 @@ import CardComponent from './components/CardComponent.vue';
       position: relative;
   }
 
-  option {
-      font-size: 36px;
-      color: #1DE390;
-      background: #EDFCF7;
-      font-family: "Jersey 15";
-
-  }
-  select {
-      cursor: pointer;
-      font-size: 36px;
-      font-family: "Jersey 15";
-      color: #1DE390;
-      height: 1em;
-      width: 5em;
-      padding-left: 35px;
-      border-style: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background: url(./assets/try.svg) 4em 7px no-repeat,
-      url(./assets/filter.png) 0px 5px no-repeat;
-      background-size: 20px; /* Размер иконки */
-      transition: background 0.3s ease;
-  }
-  select:focus {
-      outline:none;
-  }
-
-  select:focus::after {
-  content: '';
-  position: absolute;
-  background: url(./assets/filter.png) 10px center no-repeat;
-  background-size: 20px;
-  transform: rotate(180deg); /* Переворачиваем только иконку filter.png */
-  transition: transform 0.3s ease;
-  }
-
   .rating {
     display: flex;
     justify-content: center;
@@ -448,21 +418,54 @@ import CardComponent from './components/CardComponent.vue';
     left: 740px;
   }
 
-  .filter_box {
+  option {
+    font-size: 1em;
     color: #1DE390;
+    background: #EDFCF7;
     font-family: "Jersey 15";
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background: #EEFCF7;
+  }
+  select {
+    cursor: pointer;
+    font-size: 2em;
+    font-family: "Jersey 15";
+    color: #1DE390;
+    height: 1em;
+    width: 5em;
+    padding-left: 35px;
+    border-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+  }
+
+  .select-rotated-up {
+      background:
+      url(./assets/try.svg) 4em 7px no-repeat,
+      url(./assets/filter.png) 0px 5px no-repeat;
+  }
+
+  .select-rotated-down {
+      background: 
+      url(./assets/try1.svg) 4em 7px no-repeat,
+      url(./assets/filter.png) 0px 5px no-repeat;
+  }
+
+  select:focus {
+      outline:none;
+  }
+
+  .filter-box {
+    background-color: #EDFCF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 3px 10px 3px 10px;
   }
 
   .trapezoid {
     width: 100%;
     height: 840px;
-    /* border: 5px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
